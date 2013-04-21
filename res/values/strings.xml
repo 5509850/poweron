@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">ТВ пульт</string>
+    <string name="needwifi">Не включен WiFi!</string>
+    <string name="yes">ОК</string>
+	<string name="no">Отмена</string>
+	<string name="serverftp_title">адрес сервера</string>
+	<string name="serverftp_summary">IP адрес сервера на компьютере</string>
+	
+	<string name="portftp_title">порт сервера</string>
+	<string name="portftp_summary">порт сервера на компьютере (по умолчанию 22)</string>
+	
+	<string name="passftp_title">код</string>
+	<string name="passftp_summary">код доступа к серверу - смотреть в RC Server</string>
+	<string name="settings_label">Настройки</string>
+	<string name="empty"> </string>
+	
+	<string name="mac_title">MAC адрес ПК</string>
+	<string name="mac_summary">MAC адрес сетевой платы ПК - смотреть в RC Server</string>
+	<string name="searchurl">file:///android_asset</string>
+	
+	<string name="ipadressserver">IP адрес сервера</string>
+	<string name="macadressserver">MAC адрес сервера [0&#8211;9, A&#8211;F]</string>
+		<string name="ipadresstip">Введите IP адрес ПК (сервера)</string>
+		<string name="macadresst">Введите MAC адрес ПК (сервера)</string>
+		<string name="ipadress">IP адрес ПК</string>
+		<string name="ipnotcorrect">Не корректный IP = </string>	
+		<string name="macnotcorrect">Не корректный MAC = </string>
+		<string name="ipnow">Текущий IP адрес:</string>
+		<string name="macnow">Текущий MAC адрес:</string>
+		<string name="entermac">Не указан MAC адрес компьютера - смотреть в программе TV RC Server</string>
+		
+		<string name="off">Выключение ПК</string>
+		<string name="off_summary">poweroff, shutdown, reboot, hibernate, standby</string>
+		<string name="notvalidmac">Не корректный MAC адрес сервера с ПК </string>
+		
+		
+		
+			<array name="off_array">		    
+			<item>poweroff</item>
+			<item>shutdown</item>
+			<item>reboot</item>
+			<item>hibernate</item>
+			<item>standby</item>			
+		</array>
+		
+			<string-array name="off_value_array">
+				<item>1</item>
+				<item>8</item>
+				<item>9</item>
+				<item>10</item>			
+				<item>11</item>			
+	</string-array>
+	
+	
+				
+</resources>

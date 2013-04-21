@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+   xmlns:android="http://schemas.android.com/apk/res/android">
+   
+   
+ 
+ <EditTextPreference  android:title="@string/serverftp_title"
+           	android:key="serverftp" 
+            android:summary="@string/serverftp_summary" 
+            android:name="EditText Preference"
+            android:defaultValue="192.168.1.0" />
+ 
+  <EditTextPreference  android:title="@string/mac_title"
+           	android:key="mac"           	           	 
+            android:summary="@string/mac_summary" 
+            android:name="EditText Preference"
+            android:defaultValue="XX-XX-XX-XX-XX-XX" />
+  
+   <ListPreference android:title="@string/off"
+            android:key="off" 
+            android:summary="@string/off_summary" android:entries="@array/off_array"
+            android:entryValues="@array/off_value_array" />    
+     
+ 
+  <EditTextPreference  android:title="@string/empty"
+           	android:key="passftp"          
+            android:summary="@string/empty" 
+            android:name="EditText Preference"
+            android:enabled="false"            
+            android:defaultValue="FgskTgv617ssdf" />   
+            
+  <EditTextPreference  android:title="@string/empty"
+           	android:key="nameftp" 
+            android:summary="@string/empty" 
+            android:name="EditText Preference"
+            android:enabled="false"            
+            android:defaultValue="qwe#sdf6AsdfgzTs" />
+ 
+ 
+ <EditTextPreference  
+     		android:title="@string/empty"
+            android:key="portftp" 
+            android:numeric="decimal"
+            android:maxLength="6"
+            android:enabled="false"
+            android:summary="@string/empty"
+            android:name="EditText Preference"
+            android:defaultValue="22" 
+             />
+  
+   
+ 
+</PreferenceScreen>
