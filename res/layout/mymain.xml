@@ -28,13 +28,15 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/poweron" >
             </Button>
- 			
- 		 <Button
-                android:id="@+id/fullscreen"
+            
+            <Button
+                android:id="@+id/empty5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/fullscreen" >
+                android:background="@drawable/empty" >
             </Button>
+ 			
+ 		
             
                   <Button
                 android:id="@+id/poweroff"
@@ -50,11 +52,12 @@
             android:layout_height="wrap_content" >
 
             <Button
-                android:id="@+id/empty5"
+                android:id="@+id/mute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/empty" >
+                android:background="@drawable/mute" >
             </Button>
+            
 
             
                  <Button
@@ -85,11 +88,11 @@
                 android:background="@drawable/voldown" >
             </Button>
             
-            <Button
-                android:id="@+id/mute"
+             <Button
+                android:id="@+id/fullscreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/mute" >
+                android:background="@drawable/fullscreen" >
             </Button>
             
             <Button
