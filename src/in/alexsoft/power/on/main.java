@@ -20,6 +20,9 @@ package in.alexsoft.power.on;
 //http://stackoverflow.com/questions/15720558/device-discovery-in-local-network
 //http://stackoverflow.com/questions/12386948/how-to-detect-all-the-devices-connected-in-a-wifi-network-from-android-app
 
+
+import in.alexsoft.power.on.net.ActivityMain;
+
 import java.io.IOException;
 import java.net.SocketException;
 
@@ -51,7 +54,7 @@ public class main extends Activity implements OnClickListener
 	 
 	
 	  private Context context = this;
-	  Button poweron, chup, poweroff, voldown,fullscreen, volup, mute, chdown, settings;
+	  Button poweron, chup, poweroff, voldown,fullscreen, volup, mute, chdown, settings, netsettings;
 	  private Vibrator mVibrator;
 	  private static final int VIBRATE_MILLIS = 50;
 	  
@@ -97,6 +100,8 @@ public class main extends Activity implements OnClickListener
 	        chdown = (Button)findViewById(R.id.chdown);
 	        settings = (Button)findViewById(R.id.settings);
 	        
+	        netsettings = (Button)findViewById(R.id.netsettings);
+	        
 	        poweron.setOnClickListener(this);
 	        chup.setOnClickListener(this);
 	        poweroff.setOnClickListener(this);
@@ -106,6 +111,7 @@ public class main extends Activity implements OnClickListener
 	        mute.setOnClickListener(this);
 	        chdown.setOnClickListener(this);
 	        settings.setOnClickListener(this);
+	        netsettings.setOnClickListener(this);
 	        
 	        mVibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 	        
@@ -182,6 +188,15 @@ public class main extends Activity implements OnClickListener
 				startActivity(new Intent(this, Prefs.class));				
 				return;
 			}	
+			
+			if (v.getId() == R.id.netsettings)//отдельно для кнопки настроек
+			{
+				startActivity(new Intent(this, ActivityMain.class));   				
+				return;
+			}
+			
+			
+			 		
 			
 			//check wifi connection
 			if(!CheckWiFi())

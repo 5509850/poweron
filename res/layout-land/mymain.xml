@@ -125,11 +125,12 @@
 
 
 			<Button
-                android:id="@+id/empty3"
+                android:id="@+id/netsettings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/empty" >
+                android:background="@drawable/settings" >
             </Button>
+            
             <Button
                 android:id="@+id/chdown"
                 android:layout_width="wrap_content"
